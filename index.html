@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body style="background-color: pink;" >
+
+
+    <style>
+
+    </style>
+   
+        <h1 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Registration Form</h1>
+        <form>
+            
+            <table cellpadding="7" border="9" rules="rows"style=background-color:skyblue justify-content="center" >
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" name="t1" placeholder="Enter name" required></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="t2"  pattern="\W{5,9}"placeholder="Enter password" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <label><input type="radio" name="r1" value="male">Male</label>
+                        <label><input type="radio" name="r1" value="male">Female</label>
+                     </td>
+                     <tr>
+                        <td>Mail Id</td>
+                        <td><input type="text" pattern=".+@[a-z]+\.[a-z]+" placeholder="Enter Mail Id"required></td>
+                     </tr>
+                     <tr>
+                        <td>Phone Number</td>
+                        <td><input type="text"pattern="(^[6-9])\d{9}$" placeholder="Enter Mobile Number"required></td>
+                     </tr>
+                     <tr>
+                        <td>Address</td>
+                        <td><textarea name="ta"rows="5" cols="21"></textarea></td>
+                     </tr>
+                     <tr>
+                        <td>Country</td>
+                        <td>
+                            <select name="Country">
+                               
+                                <option>India</option>
+                                <option>Italy</option>
+                                <option>France</option>
+                                <option>Germany</option>
+                                <option>Brazil</option>
+
+                            </select>
+                            <tr>
+                                <td>Entertainment</td>
+                                <td><input type="checkbox" name="c1">Sports
+                                    <input type="checkbox" name="c1">News
+                                    <input type="checkbox" name="c1">Music
+                                    <input type="checkbox" name="c1">Travel
+                                    </td>
+                            <tr>
+                                <td>Photo</td>
+                                <td><input type="file" ></td>
+                            </tr>        
+                                 <td>
+                                   <input type="submit" value="Register">
+                                   <input type="reset"value="clear">
+                                 </td>
+                                
+                                
+                        
+                                
+                            </tr>
+                        </td>
+                     </tr>
+                    
+                        
+                </tr>
+            </table>
+            
+        </form>    
+    
+    
+    
+</body>
+</html>
